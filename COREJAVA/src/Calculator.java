@@ -17,5 +17,4 @@ public class Calculator {
 		System.out.println("Final Value is = " + (valueA + valueB));
 		
 	}
-
 }
