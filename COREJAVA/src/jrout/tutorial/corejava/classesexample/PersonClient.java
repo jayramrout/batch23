@@ -5,13 +5,15 @@ public class PersonClient {
 	
 		Person narayana = new Person("Narayana",-2);
 		
+		/*Address add = new Address();
+		add.set/////
+		
+		narayana.setAdd(add);
+		*/
+		
 		System.out.println(narayana);
 		
-		System.out.println("somethig.....");
 		
-		narayana.setAge(-90);
-		
-		System.out.println(narayana);
 		
 	}
 }
