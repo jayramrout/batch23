@@ -15,6 +15,15 @@ public class JayramDecoration {
 	class DrawingRoom{
 		
 	}
+	
+	/**
+	 * This class is not visible to anyone..but only to JayramDecoration class...
+	 * @author jrout
+	 *
+	 */
+	private class MyOwnClass {
+		
+	}
 }
 
 class Tata{

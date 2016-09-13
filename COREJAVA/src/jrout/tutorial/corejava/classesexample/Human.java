@@ -33,4 +33,16 @@ public class Human {
 		this.height = height;
 	}
 	
+	
+	public String getName() {
+		return this.name;
+	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		if(this.name == ((Human)obj).name && (this.age == ((Human)obj).age))
+			return true;
+		else 
+			return false;
+	}
 }

@@ -1,7 +1,11 @@
 package jrout.tutorial.corejava.innerclass;
 
-public class InnerClassesExample {
+class InnerClassesExample {
 	public String className = "InnerClassesExample";
+	
+	public String test;
+	protected String test2;
+	
 	
 	public static void main(String[] args) {
 		System.out.println(Book.count);
