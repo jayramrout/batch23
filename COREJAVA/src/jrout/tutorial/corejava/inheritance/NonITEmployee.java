@@ -6,4 +6,7 @@ public class NonITEmployee extends Employee {
 		super(name , id);
 	} 
 	
+	public void nonITExperience(){
+		System.out.println("This is my Non IT JOB...");
+	}
 }

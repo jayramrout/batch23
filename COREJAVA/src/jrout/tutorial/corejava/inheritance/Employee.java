@@ -40,5 +40,8 @@ public class Employee {
 		this.companyName = companyName;
 	}
 	
+	public void officeTime() {
+		System.out.println("Office Time for "+name+" is 10:00 AM");
+	}
 	
 }

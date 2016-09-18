@@ -1,5 +1,7 @@
 package jrout.tutorial.corejava.inheritance;
 
+import jrout.tutorial.corejava.inheritance.java.JavaEmployee;
+
 public class EmployeeClient {
 
 	public static void main(String[] args) {
@@ -17,8 +19,12 @@ public class EmployeeClient {
 		
 		NonITEmployee nie = new NonITEmployee("Anusha", 45);
 		se.setCompanyName("H2kInfosys");
-		
+		nie.officeTime();
 		System.out.println(nie.getName());
+		
+		JavaEmployee javaEmp1 = new JavaEmployee("Sandeep",67);
+		javaEmp1.officeTime();
+		
 	}
 
 }
