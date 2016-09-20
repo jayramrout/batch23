@@ -1,6 +1,11 @@
 package jrout.tutorial.corejava.inheritance;
 
-public class Employee {
+/**
+ * This is an abstract class which has so and so properties....
+ * @author jrout
+ *
+ */
+public abstract class Employee {
 	private String name;
 	private int id;
 	private String workInfo;
@@ -43,5 +48,10 @@ public class Employee {
 	public void officeTime() {
 		System.out.println("Office Time for "+name+" is 10:00 AM");
 	}
+	/**
+	 * This is a workLoad Method which is use to define the specific workload behaviour
+	 * of an Employee...
+	 */
+	public abstract void workLoad();
 	
 }

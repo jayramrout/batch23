@@ -1,6 +1,6 @@
 package jrout.tutorial.corejava.inheritance;
 
-public class SoftwareEmployee extends Employee {
+public abstract class SoftwareEmployee extends Employee {
 
 	private int progExperience;
 	private String programName;
@@ -24,7 +24,6 @@ public class SoftwareEmployee extends Employee {
 	public void setProgramName(String programName) {
 		this.programName = programName;
 	} 
-	
 	
 	
 }

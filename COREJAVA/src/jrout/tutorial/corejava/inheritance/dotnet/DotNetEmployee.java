@@ -9,4 +9,8 @@ public class DotNetEmployee extends SoftwareEmployee {
 		
 	}
 
+	@Override
+	public void workLoad() {
+		System.out.println("Work load is 4 Hrs..");
+	}
 }

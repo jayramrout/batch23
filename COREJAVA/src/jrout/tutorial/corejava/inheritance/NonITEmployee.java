@@ -9,4 +9,10 @@ public class NonITEmployee extends Employee {
 	public void nonITExperience(){
 		System.out.println("This is my Non IT JOB...");
 	}
+
+	@Override
+	public void workLoad() {
+		// TODO Auto-generated method stub
+		
+	}
 }
