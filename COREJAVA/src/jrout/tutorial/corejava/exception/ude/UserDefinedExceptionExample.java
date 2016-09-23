@@ -2,7 +2,7 @@ package jrout.tutorial.corejava.exception.ude;
 
 public class UserDefinedExceptionExample {
 
-	public static void main(String[] args) throws WrongIndexException , Exception {
+	public static void main(String[] args) {
 		UserDefinedExceptionExample udee = new UserDefinedExceptionExample();
 		String name="";
 		String diffName = "";
@@ -13,8 +13,8 @@ public class UserDefinedExceptionExample {
 			name = "No Name Choosen";
 		}
 		*/
-		diffName = udee.pickADiffName(4);
-		name = udee.pickAName(4);
+//		diffName = udee.pickADiffName(4);
+//		name = udee.pickAName(4);
 		
 		
 		/*try {
@@ -29,9 +29,26 @@ public class UserDefinedExceptionExample {
 		}
 		*/
 		System.out.println("Picked Name = " + name);
-		
+		try {
+			udee.callMethod();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		udee.call2();
 	}
 
+	
+	
+	public void callMethod() throws Exception {
+		UserDefinedExceptionExample udee = new UserDefinedExceptionExample();
+		udee.pickADiffName(4);
+		udee.pickAName(4);
+	}
+	
+	public void call2(){
+		
+	}
+	
 	
 	public String pickAName(int index) throws Exception {
 		String names[] = {"Lalitha","John","Mike","Tom"};
