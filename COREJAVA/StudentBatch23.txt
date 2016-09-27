@@ -1,0 +1,3 @@
+Good Morning
+folks
+ How u doing...I am going to write to the file again...
