@@ -23,6 +23,7 @@ public class Person implements Serializable {
 	private String gender;
 	
 	public Person(){}
+	public Person(String name){this.name = name;}
 	public Person(String n, String pr, String place) {
 		name = n; profession = pr; this.place = place;
 	}
