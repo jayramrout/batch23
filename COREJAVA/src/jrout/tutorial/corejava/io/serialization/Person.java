@@ -7,7 +7,7 @@ import java.io.Serializable;
  * @author Jayram
  *
  */
-public class Person implements Serializable {
+public class Person implements Serializable , Comparable {
 	
 	
 	
@@ -24,6 +24,10 @@ public class Person implements Serializable {
 	
 	public Person(){}
 	public Person(String name){this.name = name;}
+	public Person(String n,String place) {
+		this.name = n; 
+		this.place = place;
+	}
 	public Person(String n, String pr, String place) {
 		name = n; profession = pr; this.place = place;
 	}
@@ -66,6 +70,12 @@ public class Person implements Serializable {
 	
 	@Override
 	public String toString() {
-		return "Name "+ name +" Profession ="+ profession;
+		return name +":"+ place;
+	}
+	@Override
+	public int compareTo(Object o) {
+		Person obj = (Person)o;
+		return this.name.compareTo(obj.getName());
+//		return this.place.compareTo(obj.getPlace());
 	}
 }

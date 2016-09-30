@@ -3,6 +3,7 @@ package jrout.tutorial.corejava.collections;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
@@ -18,7 +19,7 @@ public class CollectionsExample {
 		//listExample();
 //		listToSet();
 
-		List<Person> persons = new ArrayList<>();
+		Set<Person> persons = new HashSet<>();
 		persons.add(new Person("John"));
 		persons.add(new Person("Ana"));
 		persons.add(new Person("Zak"));
@@ -26,6 +27,12 @@ public class CollectionsExample {
 		persons.add(new Person("Ben"));
 		
 		System.out.println(persons);	
+		
+		Iterator iter = persons.iterator();
+		while(iter.hasNext()){
+			System.out.println(iter.next());
+		}
+		
 	}
 	
 	public static void listToSet(){
