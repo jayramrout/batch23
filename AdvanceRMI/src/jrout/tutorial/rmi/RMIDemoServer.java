@@ -8,7 +8,7 @@ public class RMIDemoServer {
 
 	public static void main(String[] args) throws RemoteException {
 		RMIDemo demo = new RMIDemoImpl();
-		Registry registry = LocateRegistry.createRegistry(2345);
+		Registry registry = LocateRegistry.createRegistry(2346);
 		registry.rebind("RMIDemo", demo);
 		
 		System.out.println("RMI DEMO binding is completed....");

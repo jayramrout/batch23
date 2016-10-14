@@ -12,8 +12,17 @@ public class RMIDemoImpl extends UnicastRemoteObject implements RMIDemo , Serial
 	
 	@Override
 	public String sayHello(String name) throws RemoteException {
-		
-		return "Hello How are you doing " + name;
+		return  customMessage() + returnOnly3Char(name);
+	}
+	
+	
+	public String customMessage(){
+			return "Hello How are you doing .. Today is Monday...we had holiday...";
 	}
 
+
+	public String returnOnly3Char(String name){
+		return name.substring(0,4);
+	}
+	
 }
