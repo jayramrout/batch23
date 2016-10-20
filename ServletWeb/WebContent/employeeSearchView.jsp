@@ -19,7 +19,7 @@
 	%>
 		
 <table class="table table-bordered table-striped">
-  <tr >
+  <tr>
     <th>Employee Number</th>
     <th>FirstName</th>
     <th>LastName</th>
