@@ -29,10 +29,7 @@ public class HelloWorld extends HttpServlet {
 		response.setContentType("text/html");
 		out.print("Hello World  Date Now is "+ new java.util.Date());
 		
-		out.print("<form>First name:<br>"
-				+ "<input type=\"text\" name=\"firstname\"><br>"
-				+ "Last name:<br><input type=\"text\" name=\"lastname\">"
-				+ "</form>");
+		
 	}
 	
 	@Override
