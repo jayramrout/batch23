@@ -1,6 +1,7 @@
 package jrout.tutorial.servlet.mvc;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.servlet.RequestDispatcher;
@@ -29,7 +30,7 @@ public class EmployeeSearchServletController extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		Employee emp = null;
-		List<Employee> employeeList = null;
+		List<Employee> employeeList = new ArrayList<>();
 		EmployeeDAO dao = new EmployeeDAO();
 		String empId = request.getParameter("empId");
 		String allEmp = request.getParameter("allEmp");
@@ -49,6 +50,7 @@ public class EmployeeSearchServletController extends HttpServlet {
 		}
 		request.setAttribute("empInfo", emp);
 		request.setAttribute("allEmployee", employeeList);
+//		System.out.println(" employeeList : "+employeeList.size());
 		RequestDispatcher  rd = request.getRequestDispatcher("employeeSearchView.jsp");//Servlet:EmployeeSearchView
 		rd.forward(request, response);
 	}
